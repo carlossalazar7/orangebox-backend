@@ -14,7 +14,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:3000/products",
+              "raw": "https://orangebox-backend.onrender.com/products",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -27,7 +27,7 @@
           "request": {
             "method": "GET",
             "url": {
-              "raw": "http://localhost:3000/products/1",
+              "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -45,7 +45,7 @@
               "raw": "{\n  \"name\": \"Laptop\",\n  \"price\": 1200,\n  \"description\": \"High-end laptop\",\n  \"providerId\": 1\n}"
             },
             "url": {
-              "raw": "http://localhost:3000/products",
+              "raw": "https://orangebox-backend.onrender.com/products",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -63,7 +63,7 @@
               "raw": "{\n  \"name\": \"Laptop Pro\",\n  \"price\": 1500,\n  \"description\": \"Updated high-end laptop\",\n  \"providerId\": 1\n}"
             },
             "url": {
-              "raw": "http://localhost:3000/products/1",
+              "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -76,7 +76,7 @@
           "request": {
             "method": "DELETE",
             "url": {
-              "raw": "http://localhost:3000/products/1",
+              "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -94,7 +94,7 @@
           "request": {
             "method": "GET",
             "url": {
-              "raw": "http://localhost:3000/providers",
+              "raw": "https://orangebox-backend.onrender.com/providers",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -107,7 +107,7 @@
           "request": {
             "method": "GET",
             "url": {
-              "raw": "http://localhost:3000/providers/1",
+              "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -125,7 +125,7 @@
               "raw": "{\n  \"name\": \"Proveedor 1\",\n  \"address\": \"San Salvador\",\n  \"phone\": \"12345678\",\n  \"description\": \"Mayorista de tecnología\"\n}"
             },
             "url": {
-              "raw": "http://localhost:3000/providers",
+              "raw": "https://orangebox-backend.onrender.com/providers",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -143,7 +143,7 @@
               "raw": "{\n  \"name\": \"Proveedor Actualizado\",\n  \"address\": \"Santa Ana\",\n  \"phone\": \"87654321\",\n  \"description\": \"Mayorista actualizado\"\n}"
             },
             "url": {
-              "raw": "http://localhost:3000/providers/1",
+              "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
@@ -156,7 +156,7 @@
           "request": {
             "method": "DELETE",
             "url": {
-              "raw": "http://localhost:3000/providers/1",
+              "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
               "host": ["localhost"],
               "port": "3000",
