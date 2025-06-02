@@ -1,23 +1,40 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "tu_contraseña",
-    "database": "productos_db",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "use_env_variable": false,
+    "username": "orangebox",
+    "password": "vfzm55vjI2gupX9dbXsn4dGHhBNQVEYd",
+    "database": "productos_db_qitz",
+    "host": "dpg-d0uu25qdbo4c73bmauqg-a.oregon-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
-    "username": "postgres",
-    "password": "tu_contraseña",
-    "database": "productos_db_test",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "use_env_variable": false,
+    "username": "orangebox",
+    "password": "vfzm55vjI2gupX9dbXsn4dGHhBNQVEYd",
+    "database": "productos_db_qitz",
+    "host": "dpg-d0uu25qdbo4c73bmauqg-a.oregon-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
-    "username": "postgres",
-    "password": "tu_contraseña",
-    "database": "productos_db_prod",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
