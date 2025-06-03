@@ -23,9 +23,9 @@ OrangeBox Backend es una API RESTful construida con Node.js, Express y Sequelize
    Crea un archivo `.env` en la raíz del proyecto:
    ```env
    PORT=3000
-   DB_HOST=dpg-d0uu25qdbo4c73bmauqg-a.oregon-postgres.render.com
+   DB_HOST=dpg-............
    DB_USER=orangebox
-   DB_PASS=vfzm55vjI2gupX9dbXsn4dGHhBNQVEYd
+   DB_PASS=vfzm55v......
    DB_NAME=productos_db_qitz
    DB_PORT=5432
    DB_SSL=true
