@@ -16,7 +16,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/products",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["products"]
             }
@@ -29,7 +29,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["products", "1"]
             }
@@ -47,7 +47,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/products",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["products"]
             }
@@ -65,7 +65,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["products", "1"]
             }
@@ -78,9 +78,106 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/products/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["products", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET /products?fields=name,price",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?fields=name,price",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "fields", "value": "name,price" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /products?page=2&limit=5",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?page=2&limit=5",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "page", "value": "2" },
+                { "key": "limit", "value": "5" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /products?sort=-price",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?sort=-price",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "sort", "value": "-price" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /products?sort=name,-price",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?sort=name,-price",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "sort", "value": "name,-price" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /products?providerId=1",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?providerId=1",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "providerId", "value": "1" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /products?price=1200",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://orangebox-backend.onrender.com/products?price=1200",
+              "protocol": "http",
+              "host": ["orangebox-backend.onrender.com"],
+              "port": "3000",
+              "path": ["products"],
+              "query": [
+                { "key": "price", "value": "1200" }
+              ]
             }
           }
         }
@@ -96,7 +193,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/providers",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["providers"]
             }
@@ -109,7 +206,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["providers", "1"]
             }
@@ -127,7 +224,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/providers",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["providers"]
             }
@@ -145,7 +242,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["providers", "1"]
             }
@@ -158,7 +255,7 @@
             "url": {
               "raw": "https://orangebox-backend.onrender.com/providers/1",
               "protocol": "http",
-              "host": ["localhost"],
+              "host": ["orangebox-backend.onrender.com"],
               "port": "3000",
               "path": ["providers", "1"]
             }

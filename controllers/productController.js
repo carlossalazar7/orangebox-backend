@@ -1,26 +1,37 @@
+const { Op } = require('sequelize');
 const { Product } = require('../models');
 
-
 exports.getAllProducts = async (req, res) => {
-  const { page = 1, limit = 10, sort, fields, providerId, ...filters } = req.query;
+  try {
+    const { page = 1, limit = 10, sort, fields, ...filters } = req.query;
 
-  const offset = (page - 1) * limit;
-  const order = sort ? sort.split(',').map(s => s.startsWith('-') ? [s.slice(1), 'DESC'] : [s, 'ASC']) : [];
-  const attributes = fields ? fields.split(',') : undefined;
+    const offset = (parseInt(page) - 1) * parseInt(limit);
 
-  const where = {};
-  if (providerId) where.providerId = providerId;
-  for (const key in filters) where[key] = { [Op.eq]: filters[key] };
+    const order = sort
+      ? sort.split(',').map(s => s.startsWith('-') ? [s.slice(1), 'DESC'] : [s, 'ASC'])
+      : [];
 
-  const products = await Product.findAll({
-    where,
-    offset: parseInt(offset),
-    limit: parseInt(limit),
-    order,
-    attributes
-  });
+    const attributes = fields ? fields.split(',') : undefined;
 
-  res.json(products);
+    const where = {};
+    for (const key in filters) {
+      if (filters[key] !== undefined) {
+        where[key] = { [Op.eq]: filters[key] };
+      }
+    }
+
+    const products = await Product.findAll({
+      where,
+      offset,
+      limit: parseInt(limit),
+      order,
+      attributes
+    });
+
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener productos', details: error.message });
+  }
 };
 
 exports.getProductById = async (req, res) => {
